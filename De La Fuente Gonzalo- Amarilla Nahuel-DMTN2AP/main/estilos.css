@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(19, 64, 131);
+    font-family: Montserrat, sans-serif; 
+}
+
+figure{
+    text-align: center;
+    line-height: 0;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../Fuentes/Montserrat-VariableFont_wght.ttf');
+}
+
+
+#banner_02 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#banner_02 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#herramientas h2{
+    color: #d10352;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#herramientas img {
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#herramientas {
+    background-color: #0a0536;
+    
+}
+
+#herramientas div {
+    background-color: #d10352;
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent
+}
+
+#herramientas div:hover {
+    border-color: #263c55;
+}
+
+#herramientas p {
+    transition: color 0.3s ease;
+    margin-top: 10px;
+}
+
+#herramientas div:hover p {
+    color: rgb(166, 41, 250);
+}
+
+
+
+@media screen and (min-width:992px) {
+    header{
+        max-width: 1100px;
+        background-color: #430964;
+        color: rgb(138, 232, 255);
+        margin: auto;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    header #logo{
+        display: inline-block;
+        width: 80px;
+        height: 65px;
+        font-size: 0;
+        background-image: url(/img/nova\ logo.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
+
+    header #logo:hover{
+        border-radius: 20px;
+        transform: scale(1.1);
+        transition: 0.5s all ease;
+        opacity: 4.5s;
+    }
+    
+
+    header ul{
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    section{
+        max-width: 1100px;
+        background-color: #0a0536;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    #herramientas div{
+        display:inline-flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        height: 310px;
+        width: calc((100% - 4rem) / 4);
+        margin-right: 1rem;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    #herramientas p{
+        text-align: center;
+    }
+    
+    #herramientas picture {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    #herramientas picture:hover{
+        transform: scale(1.1);
+    }
+
+    #herramientas #publicidad{
+        margin-right: 0;
+    }
+
+    #nosotros{
+        overflow: auto;
+    }
+
+    #nosotros h2{
+        color: #d10352;
+    }
+
+    #nosotros div{
+        float: left;
+        width: calc((100% - 1rem) / 2);
+        color: #d10352;
+    }
+
+    #informacion_01{
+        margin-right: 1rem;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+    
+    h2{
+        font-size: 1.8rem;
+        margin-bottom: .8rem;
+    }
+
+    p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.3rem;
+    }
+    #reseñas h2{
+        color: #d10352;
+    }
+
+    #reseñas div{
+        display:inline-flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        height: 450px;
+        width: calc((100% - 3rem) / 3);
+        margin-right: 1rem;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    #reseñas picture {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 2px;
+    }
+    #reseñas picture:hover{
+        transform: scale(1.1);
+    }
+    #reseñas p{
+        text-align: center;
+        margin-top: 9px;
+    }
+    #reseñas img{
+        border-radius: 8px;
+    }
+
+    footer{
+        background-color: #430964;
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+        padding: 2rem;
+        color: #0a0536;
+    }
+    
+
+    footer div{
+        display: inline-block;
+        width: calc((100% - 3rem) / 4);
+        margin-right: 1rem;
+        text-align: center;
+    }
+    
+    footer img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid #0a0536;
+        display: block;
+        margin: 5px auto;
+    }
+
+    
+    footer img:hover {
+        border-color: #ffffff;
+    }
+
+    }
+
+@media screen and (min-width: 577px) and (max-width:991px) {
+    header{
+        width: 95%;
+        background-color: #430964;
+        color: rgb(138, 232, 255);
+        margin: auto;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    header #logo{
+        display: inline-block;
+        width: 2rem;
+        height: 3.1rem;
+        font-size: 0;
+        background-image: url(/img/nova\ logo.png);
+        background-position: center center;
+        background-size: cover;
+        vertical-align: middle;
+    }
+
+    header #logo:hover{
+        border-radius: 10px;
+        transform: scale(1.1);
+        transition: 1s all ease;
+        opacity: 4.5;
+    }
+    
+    
+    section{
+        width: 95%;
+        background-color: #0a0536;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    #herramientas div{
+        display: inline-flex;
+        flex-direction: column;
+        height: 320px;
+        width: calc((100% - 1rem) / 2);
+        margin-right: 1rem;
+        text-align: center;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    
+    #herramientas picture {
+        display: block;
+        width: 100%;
+        max-width: 150px;
+        margin: auto;
+    }
+
+    #herramientas p{
+        text-align: center;
+    }
+    
+    #herramientas picture:hover{
+        transform: scale(1.1);
+    }
+
+
+    #herramientas #publicidad, #herramientas #diseño_grafico{
+        margin-right: 0;
+    }
+
+    
+    #nosotros{
+        overflow: auto;
+    }
+
+    #nosotros div{
+        float: left;
+        width: calc((100% - 1rem) / 2);
+        color: #d10352;
+    }
+
+    #reseñas div{
+        display:inline-flex;
+        flex-direction: column;
+        border-radius: 2rem;
+        height: 450px;
+        width: calc((100% - 3rem) / 3);
+        margin-right: 1rem;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    #reseñas picture {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        border-radius: 2px;
+    }
+    #reseñas picture:hover{
+        transform: scale(1.1);
+    }
+    #reseñas p{
+        text-align: center;
+        margin-top: 9px;
+    }
+    #reseñas img{
+        border-radius: 8px;
+    }
+
+    #informacion_01{
+        margin-right: 1rem;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+        margin-bottom: .8rem;
+        color: #d10352
+    }
+
+    p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.3rem;
+        text-align: center center;
+    }
+
+    footer{
+        background-color: #430964;
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        padding: 2rem;
+        color: #0a0536;
+    }
+
+    footer div{
+        display: inline-block;
+        width: calc((100% - 1rem) / 2);
+        margin-right: 1rem;
+        text-align: center;
+    }
+    
+    footer img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #0a0536;
+        display: block;
+        margin: 5px auto;
+    }
+
+    
+    footer #logos {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header{
+        width: 100%;
+        background-color: #430964;
+        color: rgb(138, 232, 255);
+        text-align: center;
+        padding: 2rem;
+    }
+
+    header #logo{
+        display: inline-block;
+        width: 1.34rem;
+        height: 2rem;
+        font-size: 0;
+        background-image: url(/img/nova\ logo.png);
+        background-position: center center;
+        background-size: cover;
+        vertical-align: middle;
+    }
+
+    header #logo:hover{
+        border-radius: 10px;
+        transform: scale(1.1);
+        transition: 1s all ease;
+        opacity: 4.5;
+    }
+
+    section{
+        width: 100%;
+        background-color: #0a0536;
+        padding: 2rem;
+    }
+
+    #herramientas div{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 80%;
+        margin:  1.5rem;
+        text-align: center;
+        color: white;
+    }
+    
+    #herramientas picture {
+        display: block;
+        width: 100%;
+        max-width: 150px;
+        margin: auto;
+    }
+
+    #herramientas p{
+        text-align: center;
+    }
+
+    #herramientas picture:hover{
+        transform: scale(1.1);
+    }
+
+    #nosotros div{
+        width: 100%;
+        color: #d10352;
+    }
+    
+    #reseñas div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        width: 80%;
+        margin:1.5rem;
+        color: white;
+    }
+    #reseñas picture {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        border-radius: 2px;
+    }
+    #reseñas picture:hover{
+        transform: scale(1.1);
+    }
+    #reseñas p{
+        text-align: center;
+        margin-top: 10px;
+    }
+    #reseñas img{
+        border-radius: 8px;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+        margin-bottom: .8rem;
+        color: #d10352
+    }
+
+    p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.3rem;
+    }
+
+    footer{
+        background-color: #430964;
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+        text-align: center;
+        padding: 2rem;
+        color: #0a0536;
+    }
+
+    footer div{
+        width: 80%;
+        margin: 5px auto;
+        text-align: center;
+    }
+    
+    footer img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #0a0536;
+    }
+
+
+    
+    footer #logos {
+        width: 80%;
+    }
+}
+
+#foto_01, #foto_02 p{
+    color: #ffffff;
+}
+
+ #curso{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+ }
+
+#logos{
+    vertical-align: middle;
+    text-align: middle;
+}
+
+#logos li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 1rem;
+    width: 2rem;
+}
+
+#logos i {
+    color: #4e4699;
+    font-size: 1.5rem;
+}
